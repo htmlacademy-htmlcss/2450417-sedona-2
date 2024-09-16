@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Юлия Виноградова](https://up.htmlacademy.ru/htmlcss-individual/2/user/2450417).
-* Наставник: `Неизвестно`.
+* Наставник: [Дарья Шестерина](https://htmlacademy.ru/profile/id221124).
 
 ---
 
