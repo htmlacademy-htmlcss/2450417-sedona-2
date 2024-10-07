@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -17,7 +18,7 @@
           <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">О седоне</a>
+          <a class="navigation-link" href="#">О Седоне</a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="catalog.html">Гостиницы</a>
@@ -36,7 +37,7 @@
           </a>
         </li>
         <li class="navigation-item">
-          <button class="header-button button-primary">Хочу сюда!</button>
+          <button class="header-button button button-primary">Хочу сюда!</button>
         </li>
       </ul>
       </nav>
@@ -110,8 +111,8 @@
               До
               <input type="text" name="main-interval" value="9000">
             </label>
-            <button class="catalog-filter-submit" type="submit">Применить</button>
-            <button class="catalog-filter-reset" type="reset">Сбросить</button>
+            <button class="catalog-filter-submit button" type="submit">Применить</button>
+            <button class="catalog-filter-reset button" type="reset">Сбросить</button>
           </fieldset>
         </form>
       </section>
@@ -146,8 +147,10 @@
             </a>
             <span class="catalog-card-type">Гостиница</span>
             <span class="catalog-card-price">От 4000 ₽</span>
-            <a class="catalog-more-button button" href="#">Подробнее</a>
+            <div class="catalog-card-button">
+            <a class="catalog-more-button button button-primary" href="#">Подробнее</a>
             <a class="catalog-favorite-button button" href="#">В Избранное</a>
+            </div>
             <div class="catalog-card-stars catalog-card-stars-four">
               <span class="visually-hidden">4 звезды</span>
             </div>
@@ -165,8 +168,10 @@
             </a>
             <span class="catalog-card-type">Гостиница</span>
             <span class="catalog-card-price">От 5000 ₽</span>
-            <a class="catalog-more-button button" href="#">Подробнее</a>
+             <div class="catalog-card-button">
+            <a class="catalog-more-button button button-primary" href="#">Подробнее</a>
             <a class="catalog-favorite-button button" href="#">В Избранное</a>
+            </div>
             <div class="catalog-card-stars catalog-card-stars-four">
               <span class="visually-hidden">4 звезды</span>
             </div>
@@ -184,8 +189,10 @@
             </a>
             <span class="catalog-card-type">Гостиница</span>
             <span class="catalog-card-price">От 2500 ₽</span>
-            <a class="catalog-more-button button" href="#">Подробнее</a>
-            <a class="catalog-favorite-button button" href="#">В Избранное</a>
+            <div class="catalog-card-button">
+              <a class="catalog-more-button button button-primary" href="#">Подробнее</a>
+              <a class="catalog-favorite-button button" href="#">В Избранное</a>
+              </div>
             <div class="catalog-card-stars catalog-card-stars-three">
               <span class="visually-hidden">3 звезды</span>
             </div>
@@ -203,8 +210,10 @@
             </a>
             <span class="catalog-card-type">Гостиница</span>
             <span class="catalog-card-price">От 1500 ₽</span>
-            <a class="catalog-more-button button" href="#">Подробнее</a>
+            <div class="catalog-card-button">
+            <a class="catalog-more-button button button-primary" href="#">Подробнее</a>
             <a class="catalog-favorite-button button" href="#">В Избранное</a>
+            </div>
             <p class="catalog-card-stars catalog-card-stars-two">
               <span class="visually-hidden">2 звезды</span>
             </p>
@@ -234,14 +243,7 @@
           </li>
         </ul>
       </section>
-
-      <section class="search" data-test="search">
-        <h2 class="search-title">Заинтересовались?</h2>
-        <p class="search-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц
-          в Седоне</p>
-        <button class="search-button button button-primary">Поиск гостиницы в Седоне</button>
-      </section>
-      <section class="subscribe" data-test="subscribe">
+      <section class="subscribe-catalog" data-test="subscribe">
         <h2>Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
