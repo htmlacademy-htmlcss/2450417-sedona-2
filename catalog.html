@@ -44,6 +44,7 @@
     </header>
     <main class=" main-container main-inner">
       <section class="inner-header">
+        <div class="container">
         <h1 class="inner-header-title title-h-one">Гостиницы Седоны</h1>
         <ol class="breadcrumbs-list">
           <li class="breadcrumbs-iteam">
@@ -121,11 +122,12 @@
             <button class="catalog-filter-button button button-secondary" type="submit">Применить</button>
             <button class="catalog-filter-button  button button-reset" type="reset">Сбросить</button>
           </fieldset>
-
         </div>
         </form>
+      </div>
       </section>
       <section class="catalog">
+        <div class="container">
         <header class="catalog-header" data-test="catalog-products">
           <h2 class="catalog-header-title title-h-second">Найдено гостиниц: <span>38</span></h2>
           <select class="select-control" aria-label="Сортировка">
@@ -224,7 +226,8 @@
             </a>
             <a class="catalog-card-link" href="#">
               <h3 class="catalog-card-title title-h-three">Amara Resort & Spa</h3>
-            </a><div class="catalog-card-description">
+            </a>
+            <div class="catalog-card-description">
             <span class="catalog-card-type">Гостиница</span>
             <span class="catalog-card-price">От 1500 ₽</span>
           </div>
@@ -260,10 +263,14 @@
             <a class="pagination-link" href="#">10</a>
           </li>
         </ul>
+      </div>
       </section>
+
       <section class="subscribe-catalog" data-test="subscribe">
+        <div class="subscribe-container">
         <h2 class="subscribe-title title-h-second">Подпишитесь на рассылку</h2>
         <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      </div>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="subscribe-email">Укажите ваш email</label>
           <input class="subscribe-form-input" type="email" id="subscribe-email" name="user-email" placeholder="Ваш e-mail">
