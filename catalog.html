@@ -49,11 +49,11 @@
         <div class="container">
         <h1 class="inner-header-title title-h-one">Гостиницы Седоны</h1>
         <ol class="breadcrumbs-list">
-          <li class="breadcrumbs-iteam">
+          <li class="breadcrumbs-item">
             <a class="breadcrumbs-link breadcrumbs-link-home" href="index.html"></a>
             <span class="visually-hidden">Главная</span>
           </li>
-          <li class="breadcrumbs-iteam">
+          <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="">Гостиницы</a>
           </li>
         </ol>
@@ -133,18 +133,18 @@
         <header class="catalog-header" data-test="catalog-products">
           <h2 class="catalog-header-title title-h-second">Найдено гостиниц: <span>38</span></h2>
           <select class="select-control" aria-label="Сортировка">
-            <option value="popular">Сначала популярное</option>
-            <option value="cheap">Сначала дешёвое</option>
-            <option value="expensive">Сначала дорогое</option>
+            <option value="popular">Сначала дешёвое</option>
+            <option value="cheap">Сначала дорогое</option>
+            <option value="expensive">Сначала популярное</option>
           </select>
           <div class="view-buttons">
-            <a class="view-buttons-button button" href="#">
+            <a class=" view-toggle view-toggle-current view-table" href="#">
               <span class="visually-hidden">Показать плиткой</span>
             </a>
-            <a href="#" class="view-buttons-button button button-light">
+            <a  class=" view-toggle view-gallery" href="#">
               <span class="visually-hidden">Показать карточки </span>
             </a>
-            <a class="view-buttons-button button" href="#">
+            <a class=" view-toggle view-list" href="#">
               <span class="visually-hidden">Показать список</span>
             </a>
           </div>
@@ -168,9 +168,9 @@
             </div>
             <div class="catalog-card-stars catalog-card-stars-four">
               <span class="visually-hidden">4 звезды</span>
-            <p class="catalog-card-rating">
-              Рейтинг: 8,5
-            </p>
+              <p class="catalog-card-rating">
+                Рейтинг:<span> 8,5</span>
+              </p>
             </div>
           </li>
           <li class="catalog-card">
@@ -191,7 +191,6 @@
             </div>
             <div class="catalog-card-stars catalog-card-stars-four">
               <span class="visually-hidden">4 звезды</span>
-
             <p class="catalog-card-rating">
               Рейтинг:<span> 9,2</span>
             </p>
@@ -281,23 +280,23 @@
     </main>
     <footer class="page-footer" data-test="footer">
       <div class="container page-footer-wrapper">
-      <ul class="socials">
-        <li class="socials-item ">
-          <a class="socials-link" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">Vkontakte</span>
-          </a>
-        </li>
-        <li class="socials-item ">
-          <a class="socials-link" href="https://t.me/htmlacademy">
-            <span class="visually-hidden">Telegram</span>
-          </a>
-        </li>
-        <li class="socials-item">
-          <a class="socials-link" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">Youtube</span>
-          </a>
-        </li>
-      </ul>
+        <ul class="socials">
+          <li class="socials-item footer-social-vk">
+            <a class="socials-link " href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Vkontakte</span>
+            </a>
+          </li>
+          <li class="socials-item ">
+            <a class="socials-link footer-social-telegram" href="https://t.me/htmlacademy">
+              <span class="visually-hidden"></span>
+            </a>
+          </li>
+          <li class="socials-item">
+            <a class="socials-link footer-social-youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Youtube</span>
+            </a>
+          </li>
+        </ul>
       <a class="footer-phone" href="tel:+78128121212"> +7 (812) 812-12-12</a>
       <a class="footer-link" href="https://htmlacademy.ru/">
         <img class="footer-link-logo" src="image/logo-company.svg" width="115" height="33" alt=" Логотип html academy">
