@@ -58,26 +58,28 @@
           </li>
         </ol>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-          <div class="catalog-group-checkbox">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Инфраструктура:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control" for="pool">
-                  <input class="control-input" type="checkbox" name="pool" id="pool" checked>
-                  Бассейн
+                  <input class="control-input checkbox visually-hidden" type="checkbox" name="pool" id="pool" checked>
+                  <span class="checkbox-mark mark"></span>
+                  <span class="checkbox-text">Бассейн</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control" for="parking">
-                  <input class="control-input" type="checkbox" name="parking" id="parking" checked>
-                  Парковка
+                  <input class="control-input checkbox visually-hidden" type="checkbox" name="parking" id="parking" checked>
+                  <span class="checkbox-mark mark"></span>
+                  <span class="checkbox-text">Парковка</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control" for="Wi-Fi">
-                  <input class="control-input" type="checkbox" name="Wi-Fi" id="Wi-Fi">
-                  Wi-Fi
+                  <input class="control-input checkbox visually-hidden " type="checkbox" name="Wi-Fi" id="Wi-Fi">
+                  <span class="checkbox-mark mark"></span>
+                  <span class="checkbox-text">Wi-Fi</span>
                 </label>
               </li>
             </ul>
@@ -87,44 +89,52 @@
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="house-type" value="hotel" checked>
-                  Гостиница
+                  <input class="control-input radio visually-hidden" type="radio" name="house-type" value="hotel" checked>
+                  <span class="radio-mark mark"></span>
+                  <span class="radio-text">Гостиница</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="house-type" value="motel">
-                  Мотель
+                  <input class="control-input radio visually-hidden" type="radio" name="house-type" value="motel">
+                  <span class="radio-mark mark"></span>
+                  <span class="radio-text">Мотель</span>
+
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="house-type" value="apartments">
-                  Апартаменты
+                  <input class="control-input radio visually-hidden" type="radio" name="house-type" value="apartments">
+                  <span class="radio-mark mark"></span>
+                  <span class="radio-text">Апартаменты</span>
                 </label>
               </li>
             </ul>
-            </div>
           </fieldset>
-        <div class="catalog-group-price">
-          <fieldset class="catalog-filter-group">
+          <fieldset class="catalog-filter-group range">
             <legend class="catalog-filter-title">Стоимость, ₽:</legend>
             <div class="filter-range">
             <label class="filter-range-control">
-              <span class="range-input-limit">От</span>
+              <span class="range-input-limit">от</span>
               <input class="range-input range-input-min " type="text" name="main-interval" value="0">
             </label>
             <label class="filter-range-control">
-              <span class="range-input-limit"> До</span>
+              <span class="range-input-limit"> до</span>
               <input class="range-input range-input-max" type="text" name="main-interval" value="9000">
             </label>
-          </div>
+            <div class="range-scale">
+              <div class="range-bar" style="left: 0; width: 226px;">
+                <button class="range-scale-toggle range-scale-min" type="button">
+                </button>
+                <button class="range-scale-toggle range-scale-max" type="button">
+                </button>
+              </div>
+            </div>
             </fieldset>
             <fieldset class="catalog-filter-group filter-button ">
             <button class="catalog-filter-button button button-secondary" type="submit">Применить</button>
-            <button class="catalog-filter-button  button button-reset" type="reset">Сбросить</button>
+            <button class="catalog-filter-button button button-reset" type="reset">Сбросить</button>
           </fieldset>
-        </div>
         </form>
       </div>
       </section>
@@ -156,22 +166,16 @@
                 alt="Ущелье со звездным небом">
             </a>
             <a class="catalog-card-link" href="#">
-              <h3 class="catalog-card-title title-h-three">Amara Resort & Spa</h3>
+              <p class="catalog-card-title title-h-three">Amara Resort & Spa</p>
             </a>
-            <div class="catalog-card-description">
             <span class="catalog-card-type">Гостиница</span>
             <span class="catalog-card-price">От 4000 ₽</span>
-          </div>
-            <div class="catalog-card-button">
-            <a class="catalog-more-button button button-primary" href="#">Подробнее</a>
-            <a class="catalog-favorite-button button button-secondary" href="#">В Избранное</a>
-            </div>
+              <a class="catalog-more-button button button-primary" href="#">Подробнее</a>
+              <button class="catalog-favorite-button button button-secondary" href="#">В Избранное</button>
             <div class="catalog-card-stars catalog-card-stars-four">
               <span class="visually-hidden">4 звезды</span>
-              <p class="catalog-card-rating">
-                Рейтинг:<span> 8,5</span>
-              </p>
-            </div>
+          </div>
+          <p class="catalog-card-rating"> Рейтинг: 8,5 </p>
           </li>
           <li class="catalog-card">
             <a class="catalog-card-link" href="#">
@@ -179,22 +183,16 @@
                 alt="Радуга на фоне гор">
             </a>
             <a class="catalog-card-link" href="#">
-              <h3 class="catalog-card-title title-h-three">Villas at Poco Diablo</h3>
+              <p class="catalog-card-title title-h-three">Villas at Poco Diablo</p>
             </a>
-            <div class="catalog-card-description">
             <span class="catalog-card-type">Гостиница</span>
             <span class="catalog-card-price">От 5000 ₽</span>
-            </div>
-             <div class="catalog-card-button">
             <a class="catalog-more-button button button-primary" href="#">Подробнее</a>
-            <a class="catalog-favorite-button button button-favorite" href="#">В Избранное</a>
-            </div>
+            <button class="catalog-favorite-button button button-favorite" href="#">В Избранное</button>
             <div class="catalog-card-stars catalog-card-stars-four">
               <span class="visually-hidden">4 звезды</span>
-            <p class="catalog-card-rating">
-              Рейтинг:<span> 9,2</span>
-            </p>
            </div>
+           <p class="catalog-card-rating">  Рейтинг: 9,2 </p>
           </li>
           <li class="catalog-card">
             <a class="catalog-card-link" href="#">
@@ -202,23 +200,16 @@
                 alt="Горы на фоне неба">
             </a>
             <a class="catalog-card-link" href="#">
-              <h3 class="catalog-card-title title-h-three">Desert Quail Inn</h3>
+              <p class="catalog-card-title title-h-three">Desert Quail Inn</p>
             </a>
-            <div class="catalog-card-description">
             <span class="catalog-card-type">Гостиница</span>
             <span class="catalog-card-price">От 2500 ₽</span>
-          </div>
-            <div class="catalog-card-button">
               <a class="catalog-more-button button button-primary" href="#">Подробнее</a>
-              <a class="catalog-favorite-button button button-secondary" href="#">В Избранное</a>
-              </div>
+              <button class="catalog-favorite-button button button-secondary" href="#">В Избранное</button>
             <div class="catalog-card-stars catalog-card-stars-three">
               <span class="visually-hidden">3 звезды</span>
-
-            <p class="catalog-card-rating">
-              Рейтинг:<span> 6,9</span>
-            </p>
           </div>
+          <p class="catalog-card-rating"> Рейтинг: 6,9 </p>
           </li>
           <li class="catalog-card">
             <a class="catalog-card-link" href="#">
@@ -226,26 +217,20 @@
                 alt="Горы на фоне звездного неба">
             </a>
             <a class="catalog-card-link" href="#">
-              <h3 class="catalog-card-title title-h-three">Amara Resort & Spa</h3>
+              <p class="catalog-card-title title-h-three">GreenTree Inn</p>
             </a>
-            <div class="catalog-card-description">
             <span class="catalog-card-type">Гостиница</span>
             <span class="catalog-card-price">От 1500 ₽</span>
-          </div>
-            <div class="catalog-card-button">
             <a class="catalog-more-button button button-primary" href="#">Подробнее</a>
-            <a class="catalog-favorite-button button button-secondary" href="#">В Избранное</a>
-            </div>
+            <button class="catalog-favorite-button button button-secondary" href="#">В Избранное</button>
             <div class="catalog-card-stars catalog-card-stars-two">
               <span class="visually-hidden">2 звезды</span>
-            <p class="catalog-card-rating">
-              Рейтинг: 5,0
-              </p>
             </div>
+            <span class="catalog-card-rating">Рейтинг: 5,0</span>
           </li>
         </ul>
         <ul class="pagination-list">
-          <li class="pagination-item">
+          <li class="pagination-item ">
             <a class="pagination-link pagination-current">1</a>
           </li>
           <li class="pagination-item">
@@ -258,7 +243,7 @@
             <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <p class="pagination-link">...</p>
+            <span class="pagination-link pagination-text ">...</span>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
@@ -282,13 +267,13 @@
       <div class="container page-footer-wrapper">
         <ul class="socials">
           <li class="socials-item footer-social-vk">
-            <a class="socials-link " href="https://vk.com/htmlacademy">
+            <a class="socials-link" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Vkontakte</span>
             </a>
           </li>
           <li class="socials-item ">
             <a class="socials-link footer-social-telegram" href="https://t.me/htmlacademy">
-              <span class="visually-hidden"></span>
+              <span class="visually-hidden">Telegram</span>
             </a>
           </li>
           <li class="socials-item">
@@ -298,8 +283,8 @@
           </li>
         </ul>
       <a class="footer-phone" href="tel:+78128121212"> +7 (812) 812-12-12</a>
-      <a class="footer-link" href="https://htmlacademy.ru/">
-        <img class="footer-link-logo" src="image/logo-company.svg" width="115" height="33" alt=" Логотип html academy">
+      <a class="footer-link-logo" href="https://htmlacademy.ru/">
+      <span class="visually-hidden">Логотип html academy</span>
       </a>
       </div>
     </footer>
