@@ -449,9 +449,12 @@ background-size: contain;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
   padding: 12px 20px;
-  border: none;
+  outline: none;
+  border: 3px solid transparent;
   background-color: #F2F2F2;
-
+}
+.subscribe-form-input:focus {
+border: 3px solid #83B3D3;
 }
 .subscribe-button {
   min-inline-size: 232px;
@@ -983,5 +986,232 @@ list-style-type: none;
     color: #000000;
     pointer-events: none;
 }
+/*modal*/
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(242, 242, 242, 0.8);
+}
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 40px;
+  background-color: #ffffff;
 
+}
+
+.modal-auth {
+  width: 717px;
+  height: 576px;
+  border-radius: 30px;
+ padding: 64px 70px;
+}
+.modal-title {
+  margin: 0 0  64px 0;
+  max-width: 520px;
+}
+.modal-content-form {
+  display: grid;
+  font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+
+}
+.modal-content {
+  display: flex;
+  align-items: center;
+
+}
+.modal-close-button {
+  position: absolute;
+  right: 52px;
+  top: 64px;
+  display: block;
+  margin-left: auto;
+  border: none;
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  background-image: url("../image/icons/close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+
+}
+.modal-close-button:hover {
+background-color: #E6E6E6;
+}
+.modal-close-button:focus {
+background-color: #E6E6E6;
+outline: 3px solid #68A2CA;
+}
+.modal-close-button:active {
+  opacity: 30%;
+  outline: none;
+}
+.input {
+  background-color: #F2F2F2;
+  border: none;
+}
+
+.modal-form-input{
+  width: 440px;
+  border-radius: 4px;
+  height: 48px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 0 17px 0 20px;
+  outline: none;
+}
+.modal-form-input:hover {
+background-color: #E6E6E6;
+}
+.modal-form-input:focus {
+background-color: #E6E6E6;
+border: 3px solid #83B3D3;
+}
+.modal-date-input {
+  cursor: pointer;
+  background-image: url(../image/icons/date.svg);
+  background-repeat: no-repeat;
+  background-position: 94% 50%;
+}
+.notification {
+font-size: 16px;
+font-weight: 400;
+line-height: 21px;
+padding-left: 137px;
+margin: 4px 20px 23px ;
+
+}
+.notification-error {
+  color: #FF5757;
+}
+.modal-group-label {
+  min-width: 137px;
+}
+.modal-content-input {
+  height: 48px;
+  background-color:#F2F2F2;
+  font-weight: 700;
+ font-size: 18px;
+  line-height: 20px;
+  width: 31px;
+  border: none;
+  outline: none;
+
+}
+.modal-number-input {
+  display: flex;
+  margin-right: -6px;
+
+}
+.modal-number-input:nth-child(2) {
+  padding-right: 88px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+	display: none;
+}
+.modal-button {
+  width: 40px;
+  cursor: pointer;
+  border: none;
+}
+.modal-button svg {
+  opacity: 30%;
+}
+.modal-button-less {
+border-top-left-radius: 4px;
+border-bottom-left-radius: 4px;
+}
+.modal-button-more {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  }
+.modal-button:hover svg {
+  color: #000000;
+  opacity: 100%;
+}
+  .modal-button:focus svg {
+    color: #000000;
+    opacity: 100%;
+    border: 3px solid #82B3D3;
+    border-radius: 4px;
+  }
+  .modal-button:active svg {
+    opacity: 30%;
+    border: none;
+  }
+
+  /* TOOLTIP */
+  .tooltip {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    margin-left: 10px;
+  }
+
+  .tooltip-toggle {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    display: block;
+  }
+  .tooltip-icon {
+    width: 100%;
+    height: 100%;
+    color: #242424;
+    display: block;
+  }
+  .tooltip-toggle:hover .tooltip-icon {
+    color: #AF7842;
+  }
+  .tooltip-text {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 256px;
+    padding: 15px 18px 18px 22px;
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 10px;
+    background-color: #333333;
+    color: #ffffff;
+    display: none;
+  }
+  .tooltip-text::before {
+    content: "";
+    display: block;
+    width: 19px;
+    height: 9px;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-image: url(../image/icons/tooltip-arrow.svg);
+  }
+  .tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+
+.modal-content-input {
+  text-align: center;
+}
+.modal-button-search  {
+  height: 60px;
+ width: 577px;
+margin-top: 48px;
+}
 /**/
