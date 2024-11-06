@@ -1376,6 +1376,7 @@ input[type="number"]::-webkit-inner-spin-button {
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
+  display: none;
   width: 256px;
   padding: 20px 18px 23px 22px;
   margin-top: 14px;
@@ -1384,7 +1385,6 @@ input[type="number"]::-webkit-inner-spin-button {
   border-radius: 10px;
   background-color: #333333;
   color: #ffffff;
-  display: none;
 }
 
 .tooltip-text::before {
