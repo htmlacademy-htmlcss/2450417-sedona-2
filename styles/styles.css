@@ -899,8 +899,8 @@ img {
 }
 
 .button-reset:active {
-  border: 3px solid transparent;
   color: rgba(255, 255, 255, 0.3);
+  border: 3px solid transparent;
 }
 
 /*catalog-card*/
