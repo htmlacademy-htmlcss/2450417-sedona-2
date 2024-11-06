@@ -885,10 +885,12 @@ img {
   line-height: 20px;
   background-color: transparent;
   margin-top: 32px;
+  border: 3px solid transparent;
 }
 
 .button-reset:hover {
   color: rgba(255, 255, 255, 0.3);
+  border: 3px solid transparent;
 }
 
 .button-reset:focus {
@@ -897,7 +899,7 @@ img {
 }
 
 .button-reset:active {
-  border: none;
+  border: 3px solid transparent;
   color: rgba(255, 255, 255, 0.3);
 }
 
