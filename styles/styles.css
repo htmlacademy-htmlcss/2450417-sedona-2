@@ -606,8 +606,11 @@ img {
   color: #83b3d3;
 }
 
-.social-link:hover,
-.social-link:focus {
+.social-link:hover .social-icon {
+  fill: #68A2CA;
+}
+
+.social-link:focus .social-icon {
   fill: #68A2CA;
 }
 
@@ -615,9 +618,7 @@ img {
   fill: rgba(104, 162, 202, 0.3);
 }
 
-.social-icon {
-  fill: currentColor;
-}
+
 
 
 
