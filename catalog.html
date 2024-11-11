@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
@@ -40,7 +41,7 @@
                 </a>
               </li>
               <li class="navigation-item">
-                <button class="header-button button button-primary">Хочу сюда!</button>
+                <button class="header-button button button-primary" type="button">Хочу сюда!</button>
               </li>
             </ul>
           </nav>
@@ -69,7 +70,6 @@
                     <label class="control" for="pool">
                       <input class="control-input checkbox visually-hidden" type="checkbox" name="pool" id="pool"
                         checked>
-                      <span class="checkbox-mark mark"></span>
                       <span class="checkbox-text">Бассейн</span>
                     </label>
                   </li>
@@ -77,19 +77,16 @@
                     <label class="control" for="parking">
                       <input class="control-input checkbox visually-hidden" type="checkbox" name="parking" id="parking"
                         checked>
-                      <span class="checkbox-mark mark"></span>
                       <span class="checkbox-text">Парковка</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control" for="Wi-Fi">
                       <input class="control-input checkbox visually-hidden" type="checkbox" name="Wi-Fi" id="Wi-Fi">
-                      <span class="checkbox-mark mark"></span>
                       <span class="checkbox-text">Wi-Fi</span>
                     </label>
                   </li>
                 </ul>
-
               </fieldset>
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Тип Жилья:</legend>
@@ -98,23 +95,19 @@
                     <label class="control">
                       <input class="control-input radio visually-hidden" type="radio" name="house-type" value="hotel"
                         checked>
-                      <span class="radio-mark mark"></span>
                       <span class="radio-text">Гостиница</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input class="control-input radio visually-hidden" type="radio" name="house-type" value="motel">
-                      <span class="radio-mark mark"></span>
                       <span class="radio-text">Мотель</span>
-
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input class="control-input radio visually-hidden" type="radio" name="house-type"
                         value="apartments">
-                      <span class="radio-mark mark"></span>
                       <span class="radio-text">Апартаменты</span>
                     </label>
                   </li>
@@ -134,8 +127,10 @@
                   <div class="range-scale">
                     <div class="range-bar">
                       <button class="range-scale-toggle range-scale-min" type="button">
+                        <span class="visually-hidden">Минимум</span>
                       </button>
                       <button class="range-scale-toggle range-scale-max" type="button">
+                        <span class="visually-hidden">Максимум</span>
                       </button>
                     </div>
                   </div>
@@ -181,7 +176,7 @@
                 <span class="catalog-card-type">Гостиница</span>
                 <span class="catalog-card-price">От 4000 ₽</span>
                 <a class="catalog-more-button button button-primary" href="#">Подробнее</a>
-                <button class="catalog-favorite-button button button-secondary">В Избранное</button>
+                <button class="catalog-favorite-button button button-secondary" type="button">В Избранное</button>
                 <div class="catalog-card-stars catalog-card-stars-four">
                   <span class="visually-hidden">4 звезды</span>
                 </div>
@@ -198,7 +193,7 @@
                 <span class="catalog-card-type">Гостиница</span>
                 <span class="catalog-card-price">От 5000 ₽</span>
                 <a class="catalog-more-button button button-primary" href="#">Подробнее</a>
-                <button class="catalog-favorite-button button button-favorite">В Избранном</button>
+                <button class="catalog-favorite-button button button-favorite" type="button">В Избранном</button>
                 <div class="catalog-card-stars catalog-card-stars-four">
                   <span class="visually-hidden">4 звезды</span>
                 </div>
@@ -215,7 +210,7 @@
                 <span class="catalog-card-type">Гостиница</span>
                 <span class="catalog-card-price">От 2500 ₽</span>
                 <a class="catalog-more-button button button-primary" href="#">Подробнее</a>
-                <button class="catalog-favorite-button button button-secondary">В Избранное</button>
+                <button class="catalog-favorite-button button button-secondary" type="button">В Избранное</button>
                 <div class="catalog-card-stars catalog-card-stars-three">
                   <span class="visually-hidden">3 звезды</span>
                 </div>
@@ -232,7 +227,7 @@
                 <span class="catalog-card-type">Гостиница</span>
                 <span class="catalog-card-price">От 1500 ₽</span>
                 <a class="catalog-more-button button button-primary" href="#">Подробнее</a>
-                <button class="catalog-favorite-button button button-secondary">В Избранное</button>
+                <button class="catalog-favorite-button button button-secondary" type="button">В Избранное</button>
                 <div class="catalog-card-stars catalog-card-stars-two">
                   <span class="visually-hidden">2 звезды</span>
                 </div>
@@ -269,7 +264,7 @@
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="subscribe-email">Укажите ваш email</label>
             <input class="subscribe-form-input" type="email" id="subscribe-email" name="user-email"
-              placeholder="Ваш e-mail">
+              placeholder="Ваш e-mail" required>
             <button class="subscribe-button button button-secondary button-lg" type="submit">Подписаться</button>
           </form>
         </section>
