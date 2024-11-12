@@ -751,14 +751,14 @@ img {
   position: relative;
   display: flex;
   max-width: 150px;
-  align-items: center;
+  top: 2px;
   column-gap: 16px;
   line-height: 23px;
 }
 
 .checkbox:checked + .checkbox-text::before {
   background-image: url("../image/icons/checkbox.svg");
-  background-repeat: no-repeat;
+background-repeat: no-repeat;
   background-position: center;
 }
 
