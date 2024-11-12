@@ -750,6 +750,7 @@ img {
 .radio-text {
   position: relative;
   display: flex;
+  max-width: 150px;
   align-items: center;
   column-gap: 16px;
   line-height: 23px;
@@ -881,14 +882,14 @@ img {
   cursor: pointer;
 }
 
-.range-scale-toggle:hover {
-  background-color: #d3d3d3;
-}
 
-.range-scale-toggle:focus,
-.range-scale-toggle :active {
+.range-scale-toggle:focus {
   outline: 3px solid #83b3d3;
   outline-offset: -3px;
+}
+.range-scale-toggle:active {
+  outline: 2px solid #83b3d3;
+  outline-offset: -2px;
 }
 
 .range-scale-min {
@@ -1056,6 +1057,10 @@ img {
 
 .catalog-card-link:hover {
   opacity: 0.6;
+}
+
+.catalog-card-link:active {
+  opacity: 0.3;
 }
 
 .catalog-card-title:hover {
