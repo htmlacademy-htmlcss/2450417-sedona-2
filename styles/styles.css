@@ -751,7 +751,7 @@ img {
   position: relative;
   display: flex;
   max-width: 150px;
-  align-items: center;
+  top: 2px;
   column-gap: 16px;
   line-height: 23px;
 }
