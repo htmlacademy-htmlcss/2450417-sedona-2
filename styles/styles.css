@@ -758,7 +758,7 @@ img {
 
 .checkbox:checked + .checkbox-text::before {
   background-image: url("../image/icons/checkbox.svg");
-background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-position: center;
 }
 
